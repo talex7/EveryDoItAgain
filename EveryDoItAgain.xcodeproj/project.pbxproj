@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		7444CCC21DE60B3200BF00A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444CCC11DE60B3200BF00A4 /* main.m */; };
 		7444CCC51DE60B3200BF00A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444CCC41DE60B3200BF00A4 /* AppDelegate.m */; };
-		7444CCC81DE60B3200BF00A4 /* EveryDoItAgain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7444CCC61DE60B3200BF00A4 /* EveryDoItAgain.xcdatamodeld */; };
 		7444CCCB1DE60B3200BF00A4 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444CCCA1DE60B3200BF00A4 /* MasterViewController.m */; };
 		7444CCCE1DE60B3200BF00A4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444CCCD1DE60B3200BF00A4 /* DetailViewController.m */; };
 		7444CCD11DE60B3200BF00A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7444CCCF1DE60B3200BF00A4 /* Main.storyboard */; };
 		7444CCD31DE60B3200BF00A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7444CCD21DE60B3200BF00A4 /* Assets.xcassets */; };
 		7444CCD61DE60B3200BF00A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7444CCD41DE60B3200BF00A4 /* LaunchScreen.storyboard */; };
+		7444CCE51DE623E100BF00A4 /* AddToDoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444CCE41DE623E100BF00A4 /* AddToDoViewController.m */; };
+		7444CCE61DE63D2600BF00A4 /* ToDo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444CCDE1DE60D4200BF00A4 /* ToDo+CoreDataClass.m */; };
+		7444CCE71DE63D2A00BF00A4 /* ToDo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7444CCE01DE60D4200BF00A4 /* ToDo+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,12 @@
 		7444CCD21DE60B3200BF00A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7444CCD51DE60B3200BF00A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7444CCD71DE60B3200BF00A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7444CCDD1DE60D4200BF00A4 /* ToDo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ToDo+CoreDataClass.h"; sourceTree = "<group>"; };
+		7444CCDE1DE60D4200BF00A4 /* ToDo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ToDo+CoreDataClass.m"; sourceTree = "<group>"; };
+		7444CCDF1DE60D4200BF00A4 /* ToDo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ToDo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		7444CCE01DE60D4200BF00A4 /* ToDo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ToDo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		7444CCE31DE623E100BF00A4 /* AddToDoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddToDoViewController.h; path = ../AddToDoViewController.h; sourceTree = "<group>"; };
+		7444CCE41DE623E100BF00A4 /* AddToDoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddToDoViewController.m; path = ../AddToDoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,10 @@
 		7444CCB41DE60B3100BF00A4 = {
 			isa = PBXGroup;
 			children = (
+				7444CCDD1DE60D4200BF00A4 /* ToDo+CoreDataClass.h */,
+				7444CCDE1DE60D4200BF00A4 /* ToDo+CoreDataClass.m */,
+				7444CCDF1DE60D4200BF00A4 /* ToDo+CoreDataProperties.h */,
+				7444CCE01DE60D4200BF00A4 /* ToDo+CoreDataProperties.m */,
 				7444CCBF1DE60B3200BF00A4 /* EveryDoItAgain */,
 				7444CCBE1DE60B3200BF00A4 /* Products */,
 			);
@@ -63,6 +75,8 @@
 		7444CCBF1DE60B3200BF00A4 /* EveryDoItAgain */ = {
 			isa = PBXGroup;
 			children = (
+				7444CCE31DE623E100BF00A4 /* AddToDoViewController.h */,
+				7444CCE41DE623E100BF00A4 /* AddToDoViewController.m */,
 				7444CCC31DE60B3200BF00A4 /* AppDelegate.h */,
 				7444CCC41DE60B3200BF00A4 /* AppDelegate.m */,
 				7444CCC91DE60B3200BF00A4 /* MasterViewController.h */,
@@ -161,9 +175,11 @@
 			files = (
 				7444CCCE1DE60B3200BF00A4 /* DetailViewController.m in Sources */,
 				7444CCCB1DE60B3200BF00A4 /* MasterViewController.m in Sources */,
+				7444CCE51DE623E100BF00A4 /* AddToDoViewController.m in Sources */,
 				7444CCC51DE60B3200BF00A4 /* AppDelegate.m in Sources */,
 				7444CCC21DE60B3200BF00A4 /* main.m in Sources */,
-				7444CCC81DE60B3200BF00A4 /* EveryDoItAgain.xcdatamodeld in Sources */,
+				7444CCE71DE63D2A00BF00A4 /* ToDo+CoreDataProperties.m in Sources */,
+				7444CCE61DE63D2600BF00A4 /* ToDo+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
